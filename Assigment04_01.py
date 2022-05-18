@@ -22,9 +22,9 @@ factorial = 1
 if numbers >0:
     for x in range(1,numbers+1):
         factorial *=x
-    print(factorial)
+    print(f"{numbers}! = {factorial}")
 else:
-    print("incorrect")
+    print("Невірний ввод")
 
 
 
