@@ -19,4 +19,26 @@
 # Введіть літеру: а
 # Строка містить літеру "а" більше 20 разів.
 
-text = input("Введите текст")
+
+
+tries = 0
+
+while tries <= 10:
+    a = input("Enter your text")
+    b = input("Enter your letter")
+    text = a.lower()
+    letter = b.lower()
+    tries += 1
+
+    for x in text:
+        count_text = text.count(letter)
+        for y in letter:
+            len_letter = len(letter.lower())
+    if len_letter > 1:
+        print("You enter more the one letter")
+    elif count_text <= 0:
+        print(f"Letter {letter} doesn`t find")
+    else:
+        print(f"String has the letter {letter} to {count_text} times")
+if tries >= 10:
+    print("You make over 10 tries")
