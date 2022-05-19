@@ -38,7 +38,11 @@ while tries <= 10:
         print("You enter more the one letter")
     elif count_text <= 0:
         print(f"Letter {letter} doesn`t find")
+    elif count_text <= 10:
+        print(f"String has the letter {letter} till 10 times")
+    elif count_text <= 20:
+        print(f"String has the letter {letter} till 20 times")
     else:
-        print(f"String has the letter {letter} to {count_text} times")
+        print(f"String has the letter {letter} more 20 times")
 if tries >= 10:
     print("You make over 10 tries")
