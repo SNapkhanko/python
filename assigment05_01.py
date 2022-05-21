@@ -19,12 +19,12 @@ l = []
 
 for x in range (len_string):
     l.append (random.randint(50,100))
-    for a in range(len(l)):
-        for b in range(a+1, len(l)):
-            if l[a] < l[b]:
-                tmp = l[a]
-                l[a]= l[b]
-                lb = tmp
-
+for a in range(len(l)):
+    for b in range(a+1, len(l)):
+        if l[a] < l[b]:
+            tmp = l[a]
+            l[a]= l[b]
+            lb = tmp
 print(l)
+
 
