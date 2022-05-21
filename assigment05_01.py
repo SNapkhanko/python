@@ -13,19 +13,18 @@
 #     * reverse=True
 
 import random
+len_string = int(input("Enter the len of string from 10 till 50"))
 
 l = []
-while True:
-    len_string = int(input("Enter the len of string from 10 till 50"))
-    if len_string == 'quit':
-        break
-    for x in range (len_string):
-        l.append(round(random.random() * 100 % 50))
-        for a in range(len(l)):
-            for b in range(a+1, len(l)):
-                if l[a] < l[b]:
-                    tmp = l[a]
-                    l[a]= l[b]
-                    lb = tmp
-    print(l)
+
+for x in range (len_string):
+    l.append (random.randint(50,100))
+    for a in range(len(l)):
+        for b in range(a+1, len(l)):
+            if l[a] < l[b]:
+                tmp = l[a]
+                l[a]= l[b]
+                lb = tmp
+
+print(l)
 
