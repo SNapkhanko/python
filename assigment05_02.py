@@ -13,10 +13,20 @@
 #    * list(sequence), а також tuple/set конструктори
 #    * reverse=True
 
-text = input("Enter your text")
-letters = []
 
-for x in range(text):
-    letters.append(text.split)
-    print(letters)
 
+
+tries = 0
+
+while tries < 10:
+    text = input("Enter your text")
+    if len(text) < 1:
+        print("Enter your text again")
+    else:
+        letters = tuple(sorted(text))
+        letters_reversed = tuple(sorted(text, reverse = True))
+        words = tuple(sorted(text.split()))
+        words_reversed = tuple(sorted(words, reverse= True))
+        print(f'{letters}\n{letters_reversed}\n{words}\n{words_reversed}')
+
+    tries += 1
