@@ -23,10 +23,10 @@ while tries < 10:
     if len(text) < 1:
         print("Enter your text again")
     else:
-        letters = tuple(sorted(text))
-        letters_reversed = tuple(sorted(text, reverse = True))
-        words = tuple(sorted(text.split()))
-        words_reversed = tuple(sorted(words, reverse= True))
+        letters = sorted(text)
+        letters_reversed = sorted(text, reverse = True)
+        words = sorted(text.split())
+        words_reversed = sorted(words, reverse= True)
         print(f'{letters}\n{letters_reversed}\n{words}\n{words_reversed}')
 
     tries += 1
