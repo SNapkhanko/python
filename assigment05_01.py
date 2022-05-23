@@ -16,7 +16,7 @@ import random
 
 
 l = []
-x = True
+
 
 
 while x:
