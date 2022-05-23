@@ -12,12 +12,16 @@
 import random
 len_list = int(input("Enter the len of list"))
 list1 =[]
-list2 = []
-for x in range(len_list):
-    list1.append(random.randint(50, 100))
+counter = 0
+if 10 < len_list < 50:
+    for x in range(len_list):
+        list1.append(random.randint(50, 100))
+    for a in range (1, len(list1)-1) :
+        if list1[a-1]< list1[a] >list1[a+1]:
+            counter +=1
     print(list1)
-    #for y in list1:
-        #if list1[y] > list1[y+1]:
-            #list2.append(y)
+    print(counter)
+else:
+    print("You enter the wrong len should be more than 10 and less the 50")
 
 

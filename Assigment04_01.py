@@ -14,20 +14,11 @@
 # Введіть число для обчислення факторіалу: -5
 # Невірний ввод
 
+for i in []:
 
+   print(i)
 
-numbers = int(input("Enter your number"))
-factorial = 1
-
-if numbers >0:
-    for x in range(1,numbers+1):
-        factorial *=x
-    print(f"{numbers}! = {factorial}")
-else:
-    print("Невірний ввод")
-
-
-
+print('Done.')
 
 
 
