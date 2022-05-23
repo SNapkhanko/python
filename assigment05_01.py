@@ -14,11 +14,16 @@
 
 import random
 
-tries = 0
+
 l = []
-len_string = int(input("Enter the len of string from 10 till 50"))
 
 
+
+while True:
+    len_string = int(input("Enter the len of string from 10 till 50"))
+    if 10 > len_string < 50:
+        print("You write the wrong len, try again")
+        continue
     for x in range (len_string):
         l.append(random.randint(50, 100))
     for a in range(len(l)):
