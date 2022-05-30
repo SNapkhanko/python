@@ -18,7 +18,7 @@
 
 tries = 0
 
-while tries < 10:
+while tries < 10:# Цикл по количеству попыток
     text = input("Enter your text")
     if len(text) < 1:
         print("Enter your text again")

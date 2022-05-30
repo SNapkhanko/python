@@ -16,8 +16,7 @@ import random
 
 
 l = []
-
-
+x = True
 
 while x:
     len_string = int(input("Enter the len of string from 10 till 50"))
